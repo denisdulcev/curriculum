@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @page {
+            size: A4
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            width: 100%;
+            height: 100%;
+        }
+
+        .encabezado {
+            width: 30%;
+            height: 90px;
+            background: #3E3E3E;
+        }
+
+        .foto {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -80px;
+            z-index: 1;
+        }
+
+        .foto>img {
+            width: 120px;
+        }
+
+        .informacion-personal {
+            background: #0295AE;
+            width: 30%;
+            height: 91%;
+            position: relative;
+            top: -156px;
+        }
+        .iconos,
+        .iconos-t, .iconos-ubicacion {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            top: 100px;
+            margin-bottom: 10px;
+        }
+        .iconos>i,
+        .iconos-t>i,
+        .iconos-ubicacion>i,
+        .iconos>p,
+        .iconos-t>p, 
+        .iconos-ubicacion>p {
+            font-size: 20px;
+            color: white;
+            font-weight: 100;
+        }
+        .barra-separadora{
+            width: 90%;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 130px;
+            left: 10px;
+        }
+        .resumen-profecional>h1{
+            font-size: 28px;
+            position: relative;
+            font-weight: 300;
+            font-family: 'arial', 'Arial Narrow', Arial, sans-serif;
+            top: 130px;
+            left:10px;
+        }
+        .resumen-profecional>i{
+            font-size: 18px;
+            position: relative;
+            top: 120px;
+        }
+        .resumen-profecional>p{
+            width: 86%;
+            font-size: 18px;
+            position: relative;
+            top: 98px;
+            left: 20px;
+        }
+        .nombre>h1{
+            display: flex;
+            font-family: 'arial', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            top: -1060px;
+            left: 250px;
+            font-size: 60px;
+        }
+        .barra-separadora1{
+            width: 65%;
+            border: 1px solid #B1E3EC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -1080px;
+            left: 250px;
+        }
+        .barra-separadora2{
+            width: 65%;
+            border: 1px solid #B1E3EC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -1050px;
+            left: 250px;
+        }
+        .historial-laboral{
+            position: relative;
+            top: -1070px;
+            left: 250px;
+        }
+        .historial-laboral>h2{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'arial', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 30px;
+        }
+        .historial-laboral>h3{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'arial', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+        .historial-laboral>h4{
+            font-size: 19px;
+            font-weight: 100;
+            font-family: 'arial', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 10px;
+        }
+        .historial-laboral>p{
+            font-size: 16px;
+            font-weight: 100;
+            font-family: 'arial', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 40px;
+        }
+        .formacion{
+            position: relative;
+            top: -1050px;
+            left: 250px;
+        }
+        .formacion>h1{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'arial', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 15px;
+        }
+        .formacion>h4{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body class="A4">
+
+    <!-- Each sheet element should have the class "sheet" -->
+    <!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
+    <section class="sheet padding-10mm">
+        <section class="contenedor">
+            <div class="encabezado"></div>
+            <div class="foto">
+                <img src="suzy.jpg" alt="">
+            </div>
+            <div class="informacion-personal">
+                <div class="iconos">
+                    <i class='bx bxs-phone'></i>
+                    <p>(xx) xxxx xxxx</p>
+                </div>
+                <div class="iconos-t">
+                    <i class='bx bxl-telegram'></i>
+                    <p>xxxxxxx@xxxx.xxx</p>
+                </div>
+                <div class="iconos-ubicacion">
+                    <i class='bx bx-current-location' ></i>
+                    <p> xxxxxxx xxxx xxx,xx</p>
+                </div>
+                <div class="barra-separadora"></div>
+                <div class="resumen-profecional">
+                    <h1>RESUMEN PROFECIONAL</h1>
+                    <i class='bx bx-caret-right' ></i>
+                    <P>Experto en ----------- ------------- ------- --------- ---------- ----- ------- ------ ----- </P>
+                    <i class='bx bx-caret-right' ></i>
+                    <P>Interprete de ----------- ------------- ------- --------- ---------- ----- ------- ------ ----- </P>
+                    <i class='bx bx-caret-right' ></i>
+                    <P>Gestor experimentado ----------- ------------- ------- --------- ---------- ----- ------- ------ ----- </P>
+                    <i class='bx bx-caret-right' ></i>
+                    <P>Capas de  ----------- ------------- ------- --------- ---------- ----- ------- ------ ----- </P>
+                </div>
+                <div class="barra-separadora"></div>
+                <div class="resumen-profecional">
+                    <h1>Aptitudes</h1>
+                    <i class='bx bx-caret-right' ></i>
+                    <P>Hablar ingles con fluides</P>
+                    <i class='bx bx-caret-right' ></i>
+                    <P>Programar en java, react...</P>
+                    <i class='bx bx-caret-right' ></i>
+                    <P>Gestion de proyectos</P>
+                    <i class='bx bx-caret-right' ></i>
+                    <P>Automotivador</P>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="nombre">
+                <h1>BAE SU JI</h1>
+            </div>
+            <div class="barra-separadora1"></div>
+            <div class="historial-laboral">
+                <h2>HISTORIAL LABORAL</h2>
+                <h4>Fechas del plaso del trabajo(...)</h4>
+                <h3>Nombre de la empresa(..)   |  Ciudad(...) </h3>
+                <p>Desceipcion de lo que se hacia, que puesto ocupaba, esperiencia. </p>
+                <h4>Fechas del plaso del trabajo(...)</h4>
+                <h3>Nombre de la empresa(..)   |  Ciudad(...) </h3>
+                <p>Desceipcion de lo que se hacia, que puesto ocupaba, esperiencia. </p>
+                <h4>Fechas del plaso del trabajo(...)</h4>
+                <h3>Nombre de la empresa(..)   |  Ciudad(...) </h3>
+                <p>Desceipcion de lo que se hacia, que puesto ocupaba, esperiencia. </p>
+                <h4>Fechas del plaso del trabajo(...)</h4>
+                <h3>Nombre de la empresa(..)   |  Ciudad(...) </h3>
+                <p>Desceipcion de lo que se hacia, que puesto ocupaba, esperiencia. </p>
+            </div>
+            <div class="barra-separadora2"></div>
+            <div class="formacion">
+                <h1>FORMACION</h1>
+                <p>(Año de inicio primaria)</p>
+                <h4>Nombre de la escuela   |   Localidad</h4>
+                <p>(Año de inicio preparatoria)</p>
+                <h4>Nombre de la escuela   |   Localidad</h4>
+                <p>(Año de inicio secundaria)</p>
+                <h4>Nombre de la escuela   |   Localidad</h4>
+                <p>(Año de inicio univercidad o licenciatura)</p>
+                <h4>Nombre de la escuela   |   Localidad</h4>
+                <p>(Año de inicio maestria)</p>
+                <h4>Nombre de la especialidad   |   Localidad</h4>
+            </div>
+        </section>
+        <!-- Write HTML just like a web page -->
+        <!-- <article>This is an A4 document.</article> -->
+
+    </section>
+
+</body>
+
+</html>
